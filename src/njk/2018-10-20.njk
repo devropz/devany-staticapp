@@ -1,0 +1,14 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[2] %}
+
+{% block page_title %}{{ entry.title }}{% endblock %}
+
+{% block description %}Blog entry for Oct. 20, 2019, Call me Ishmael{% endblock %}
+
+{% block story %}
+  <img src="img/kraken03.jpg" class="img-fluid" alt="picture of kraken">
+  <h1>{{ entry.title }}</h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>American Main pirate line galleon hands scourge of the seven seas provost main sheet bilge water tackle barque crow's nest piracy. Wench Corsair schooner cable weigh anchor loaded to the gunwalls piracy jib nipper pinnace Buccaneer Barbary Coast transom. Chain Shot interloper crack Jennys tea cup fluke to go on account barkadeer rutters sloop squiffy scallywag lanyard nipperkin lass. Furl walk the plank lugsail plunder scurvy brig execution dock boom parley crack Jennys tea cup interloper clap of thunder coffer. </p>
+{% endblock %}

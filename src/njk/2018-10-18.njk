@@ -1,0 +1,14 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[0] %}
+
+{% block page_title %}{{ entry.title }}{% endblock %}
+
+{% block description %}Blog entry for Oct. 18, 2018, It was a dark and stormy night.{% endblock %}
+
+{% block story %}
+  <img src="img/kraken01.jpg" class="img-fluid" alt="picture of kraken">
+  <h1>{{ entry.title }}</h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>Driver line broadside grog doubloon coffer quarterdeck starboard fore splice the main brace belay black jack gabion. Wench cackle fruit crack Jennys tea cup rigging knave cutlass marooned bilged on her anchor starboard red ensign splice the main brace broadside hornswaggle. Ye grapple reef blow the man down hardtack skysail interloper coffer lugsail Jack Tar Sea Legs spike gabion. Bounty crimp barque tack to go on account belaying pin loaded to the gunwalls cable tackle lateen sail squiffy matey schooner. Transom gaff Jack Ketch yard line sutler gibbet handsomely man-of-war clap of thunder chantey Shiver me timbers weigh anchor. Six pounders furl measured.</p>
+{% endblock %}

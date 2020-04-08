@@ -1,0 +1,14 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[1] %}
+
+{% block page_title %}{{ entry.title }}{% endblock %}
+
+{% block description %}Blog entry for Oct. 19, 2018, Fear the Kraken{% endblock %}
+
+{% block story %}
+  <img src="img/kraken02.jpg" class="img-fluid" alt="picture of kraken">
+  <h1>{{ entry.title }}</h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p> Clipper bilge rat spirits yawl parley cackle fruit nipperkin grapple pillage brig topgallant heave to bowsprit. Pillage lugger gangway Jolly Roger brigantine handsomely scourge of the seven seas tackle rigging snow chase Arr Sail ho. Davy Jones' Locker execution dock gally lugsail gabion coxswain handsomely jury mast broadside skysail league reef lad. Lass chantey yawl draft mutiny boom pinnace jury mast brig topmast schooner Pirate Round starboard.</p>
+{% endblock %}
